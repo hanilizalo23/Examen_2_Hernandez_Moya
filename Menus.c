@@ -17,11 +17,11 @@
 #include "PIT.h"
 #include <stdio.h>
 
-static program_status_t g_actual_status[2];
+static program_status_t g_actual_status[2] = {{MAIN_MENU, NONE,false},{MAIN_MENU, NONE,false}};
 static uint8_t read_data[2];
 
 //Strings for messages
-uint8_t MainMenu[50];
+uint8_t MainMenu[] = "\r\n1) Introducir secuencia\r\n2) PWM\r\n";
 
 uint8_t ConfigureAll(void)
 {
