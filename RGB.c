@@ -74,7 +74,7 @@ void RGB_led_change_seq_color(void)
 	if((g_stop_flag) && (g_sequence_total == g_sequence_counter))
 	{
 		g_sequence_counter = 0x00;
-		RGB_led_stop_sequence();
+		//Sequence must stop
 	}
 	else if((!g_stop_flag) && (g_sequence_total == g_sequence_counter))
 	{
@@ -86,6 +86,17 @@ void RGB_led_change_seq_color(void)
 		g_sequence_counter++;
 		RGB_led_set_color(&g_sequence_rgb_code[g_colors_seq[g_sequence_counter]]);
 	}
+}
+
+/*Functions to generate a one second delay*/
+void RGB_led_delay_1s_init(void)
+{
+	//Wanted to change PIT for FTM
+}
+
+void RGB_led_set_color(rgb_intensity_colors_t *rgb_code)
+{
+	//Wanted to change PIT for FTM
 }
 
 void SW3_cb(void) /**Setter for the callback of sw3 and both reading*/
