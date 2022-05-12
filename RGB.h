@@ -9,6 +9,7 @@
 #ifndef RGB_H_
 #define RGB_H_
 
+
 /*Period of 1/500 (for PMW to control the RGB). Since we are using the system clock divided by 1,
  * MOD = (1/500) / (1/60000000)*/
 #define FTM_CHV_RGB_INIT 	(0U)
@@ -106,7 +107,6 @@ void red(void);		/**Function that turn on the red LED, waiting and turning it of
 void yellow(void);	/**Function that turn on the yellow LED, waiting and turning it off*/
 void white(void);   /**Function that turn on the white LED, waiting and turning it off*/
 void no_color(void); /**Functions that doesn't turn on anything**/
-
 
 
 #endif /* RGB_H_ */

@@ -41,6 +41,8 @@ static uint16_t g_sequence_total = 0x00;
 static color_sequence_t *g_colors_seq = 0x00;
 //Stores if the sequence is specified to be stopped
 static continue_seq_t g_stop_flag = FALSE;
+//Variable to track how many colors are in the sequence
+static uint8_t g_sequence_n = 0;
 
 //RGB codes of the colors for the sequence
 rgb_intensity_colors_t g_sequence_rgb_code[7] =
