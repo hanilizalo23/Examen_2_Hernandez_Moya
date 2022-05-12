@@ -1,1 +1,1 @@
-# Exa_2_Hernandez_Moya
+Examen 2, SEI.
